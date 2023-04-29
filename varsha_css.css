@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+    body {
+    background-size: cover;
+    background-position: center;
+    }
+    body{
+        background-image: url("https://phx02pap001files.storage.live.com/y4mRVdiPqiyaVlqAKgJUOF0_45MpOrmrvcjCrV6I4Q-YCu20CEIfYKczlYUTmXFwUNHUi7xaFFXeREWe6UzzeqqMSxV5TrWIACrP3aI1enls33qahLsuaMTEaB-X5OoRJgAty-DIW8fBRecOojM7KtGe-jguByN_HLzPssbaac-_kbNOkSL9A9igKtkeRlEWG-e?width=3000&height=2000&cropmode=none");
+        ;
+    }
+
+    .container {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    min-height: 100vh;
+    display:hidden;
+   
+    }
+
+    .card {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    margin-bottom:150px;
+    }
+    .wishing{
+        color: black;
+    }
+
+    .front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    }
+
+    .back {
+    transform: rotateY(180deg);
+    background-color: #f8f8f8;
+    }
+
+    .card:hover {
+    transform: rotateY(180deg);
+    }
+
+    h1, h2, h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #c24d4d;
+    }
+
+    h2 {
+    font-size: 30px;
+    }
+
+    p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    a{
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        color:#c24d4d;
+
+    }
+
+    .front img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+   
+    @media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+        height: 60vh;
+    }
+    .wishing{
+      margin-top:10px;
+      font-size:20px;
+    }
+    h1{
+        font-size:30px;
+    }
+    }
